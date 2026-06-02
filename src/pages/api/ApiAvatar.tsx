@@ -52,13 +52,13 @@ export default function ApiAvatar() {
               <Avatar alt="Caio Ribeiro" size="lg" status="online" />
               <Avatar alt="Nome Sobrenome" size="lg" status="away" />
               <Avatar alt="Nome Sobrenome" size="lg" status="busy" />
-              <Avatar alt="Yago Almeida" size="lg" status="offline" />
+              <Avatar alt="Diego Martins" size="lg" status="offline" />
             </>
           ),
           code: `<Avatar alt="Caio Ribeiro" status="online" />
 <Avatar alt="Nome Sobrenome" status="away" />
 <Avatar alt="Nome Sobrenome" status="busy" />
-<Avatar alt="Yago Almeida" status="offline" />`,
+<Avatar alt="Diego Martins" status="offline" />`,
         },
       ]}
       dosDonts={[

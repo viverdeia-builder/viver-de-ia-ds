@@ -41,7 +41,7 @@ const posts = [
 ];
 
 const membros = [
-  { av: 'YA', nome: 'Yago Almeida', status: 'online' },
+  { av: 'DM', nome: 'Diego Martins', status: 'online' },
   { av: 'DP', nome: 'Renato Lima', status: 'online' },
   { av: 'CM', nome: 'Paula Mendes', status: 'online' },
   { av: 'RF', nome: 'Rafael Fortes', status: 'away' },
@@ -49,7 +49,7 @@ const membros = [
 
 const ranking = [
   { pos: 1, av: 'ML', nome: 'Nome Sobrenome', pts: '2.840' },
-  { pos: 2, av: 'YA', nome: 'Yago Almeida', pts: '2.310' },
+  { pos: 2, av: 'DM', nome: 'Diego Martins', pts: '2.310' },
   { pos: 3, av: 'CM', nome: 'Paula Mendes', pts: '1.920' },
 ];
 

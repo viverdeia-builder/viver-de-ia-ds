@@ -14,7 +14,7 @@ const rows: Row[] = [
   { name: 'Paula Mendes',  streak: 14, status: 'ativo',     last: '2026-05-18' },
   { name: 'Renato Lima', streak: 4, status: 'em risco',  last: '2026-05-09' },
   { name: 'Nome Sobrenome',  streak: 11, status: 'ativo',     last: '2026-05-20' },
-  { name: 'Yago Almeida',   streak: 0,  status: 'pausado',   last: '2026-04-22' },
+  { name: 'Diego Martins',   streak: 0,  status: 'pausado',   last: '2026-04-22' },
 ];
 
 export default { title: 'DataTable' };
