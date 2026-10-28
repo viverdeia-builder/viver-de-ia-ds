@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Guia: Design System de nível mundial operado por IA · Viver de IA</title>
+<meta name="description" content="O passo a passo que Rafael Milagre usou pra construir o Design System do Viver de IA — pra fundadores e líderes. Baixe o PDF." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- Fonte sem travar o 1º paint: o texto aparece na hora e troca pra Geist quando chega -->
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+<meta property="og:title" content="Guia: Design System de nível mundial operado por IA" />
+<meta property="og:description" content="O passo a passo, pra fundadores e líderes. Por Rafael Milagre · Viver de IA." />
+<meta property="og:image" content="https://viver-de-ia-ds.vercel.app/guia/cover-og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1697" />
+<meta property="og:type" content="website" />
+<style>
+  :root {
+    --navy: #0A1F3B; --navy-deep: #02162A; --navy-darker: #010B1A;
+    --font: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    min-height: 100vh; font-family: var(--font); color: rgba(255,255,255,0.82);
+    -webkit-font-smoothing: antialiased; line-height: 1.6;
+    background-color: var(--navy);
+    background-image:
+      radial-gradient(120% 80% at 100% 0%, rgba(255,255,255,0.08), transparent 55%),
+      radial-gradient(90% 70% at 0% 100%, rgba(40,80,150,0.30), transparent 60%),
+      linear-gradient(160deg, #0A1F3B 0%, #02162A 60%, #010B1A 100%);
+    background-attachment: fixed;
+    display: flex; align-items: flex-start; justify-content: center;
+    padding: 40px 22px;
+  }
+  @media (min-width: 860px) { body { align-items: center; padding: 48px; } }
+
+  .wrap { width: 100%; max-width: 960px; display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+  @media (min-width: 860px) { .wrap { grid-template-columns: 0.82fr 1fr; gap: 60px; } }
+
+  .cover-fig { margin: 0 auto; max-width: 320px; width: 100%; order: 0; }
+  .cover-fig a { display: block; }
+  .cover-fig img {
+    display: block; width: 100%; height: auto; border-radius: 11px;
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 36px 80px -24px rgba(0,0,0,0.65), 0 10px 28px -14px rgba(0,0,0,0.5);
+  }
+
+  .brandrow { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; }
+  .brandrow img { width: 28px; height: auto; }
+  .brandrow span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 14px; }
+  h1 { font-size: clamp(27px, 5.4vw, 40px); line-height: 1.12; font-weight: 600; letter-spacing: -0.025em; color: #fff; }
+  h1 em { font-style: italic; font-weight: 400; color: rgba(255,255,255,0.82); }
+  .pitch { margin-top: 18px; font-size: clamp(14.5px, 2.3vw, 16px); line-height: 1.62; color: rgba(255,255,255,0.72); max-width: 34em; }
+  .cta {
+    display: inline-flex; align-items: center; gap: 10px; margin-top: 28px;
+    padding: 15px 28px; border-radius: 999px; background: #fff; color: var(--navy);
+    font-weight: 600; font-size: clamp(14.5px, 2.3vw, 16px); text-decoration: none;
+    box-shadow: 0 18px 44px -18px rgba(0,0,0,0.6); transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:hover { transform: translateY(-1px); box-shadow: 0 22px 50px -18px rgba(0,0,0,0.65); }
+  .meta { margin-top: 15px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; color: rgba(255,255,255,0.45); }
+  .by { margin-top: 30px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 13.5px; color: rgba(255,255,255,0.7); }
+  .by strong { color: #fff; font-weight: 600; }
+</style>
+</head>
+<body>
+  <!-- Caminhos absolutos: em /guia (sem barra final) os relativos caíam na raiz e quebravam capa e PDF -->
+  <main class="wrap">
+    <figure class="cover-fig">
+      <a href="/guia/guia-design-system-viver-de-ia.pdf" aria-label="Baixar o guia em PDF">
+        <img src="/guia/cover-640.webp" srcset="/guia/cover-640.webp 640w, /guia/cover-960.webp 960w" sizes="(max-width: 364px) calc(100vw - 44px), 320px" width="640" height="905" fetchpriority="high" alt="Capa do guia: como dar à sua empresa um Design System de nível mundial operado por IA" />
+      </a>
+    </figure>
+    <div class="content">
+      <div class="brandrow"><img src="/guia/monogram-white-56.png" width="28" height="15" alt="" /><span>Viver de IA</span></div>
+      <p class="eyebrow">Guia · Marca + IA</p>
+      <h1>Um Design System de <em>nível mundial</em>, operado por IA.</h1>
+      <p class="pitch">O passo a passo que usei pra construir o Design System do Viver de IA — do zero ao deploy, sem time de design nem agência. Escrito pra fundadores e líderes: sem jargão, sem código.</p>
+      <a class="cta" href="/guia/guia-design-system-viver-de-ia.pdf">Baixar o guia em PDF →</a>
+      <p class="meta">PDF · 19 páginas · guia completo</p>
+      <p class="by">por <strong>Rafael Milagre</strong> · fundador, Viver de IA</p>
+    </div>
+  </main>
+</body>
+</html>
