@@ -57,14 +57,14 @@ export default function ApiAvatar() {
           preview: (
             <>
               <Avatar alt="Caio Ribeiro" size="lg" status="online" />
-              <Avatar alt="Nome Sobrenome" size="lg" status="away" />
-              <Avatar alt="Nome Sobrenome" size="lg" status="busy" />
+              <Avatar alt="Mariana Leal" size="lg" status="away" />
+              <Avatar alt="Gustavo Dantas" size="lg" status="busy" />
               <Avatar alt="Diego Martins" size="lg" status="offline" />
             </>
           ),
           code: `<Avatar alt="Caio Ribeiro" status="online" />
-<Avatar alt="Nome Sobrenome" status="away" />
-<Avatar alt="Nome Sobrenome" status="busy" />
+<Avatar alt="Mariana Leal" status="away" />
+<Avatar alt="Gustavo Dantas" status="busy" />
 <Avatar alt="Diego Martins" status="offline" />`,
         },
       ]}
