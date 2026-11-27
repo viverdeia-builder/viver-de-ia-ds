@@ -10,6 +10,7 @@ Padrão: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) · Versiona
 
 - Exemplos do site sem dado real: e-mail, arquivo, endereços de API e de auditoria viram fictícios (`suaempresa.com.br`); números de receita do FP&A, da página de dados e dos gráficos viram dados de exemplo inventados, com totais, atingimentos e variações fechando.
 - Sai do repositório o documento interno de estado e roadmap; as instruções deixam de citar o computador e as pastas pessoais de quem mantém o plugin.
+- Segunda passada: as imagens de referência dos testes visuais foram refeitas a partir das páginas limpas (as antigas ainda mostravam os exemplos anteriores); a empresa do exemplo de palestrante vira "Empresa Modelo"; pessoas ao fundo do retrato do Yago desfocadas.
 
 ### Design · acervo de fotos reais (02/nov)
 
