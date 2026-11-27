@@ -6,6 +6,11 @@ Padrão: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) · Versiona
 
 ## [Não lançado]
 
+### Limpeza de dado real (27/nov · plugin 1.14.1)
+
+- Exemplos do site sem dado real: e-mail, arquivo, endereços de API e de auditoria viram fictícios (`suaempresa.com.br`); números de receita do FP&A, da página de dados e dos gráficos viram dados de exemplo inventados, com totais, atingimentos e variações fechando.
+- Sai do repositório o documento interno de estado e roadmap; as instruções deixam de citar o computador e as pastas pessoais de quem mantém o plugin.
+
 ### Design · acervo de fotos reais (02/nov)
 
 - **Fotos novas em `public/fotos/`** (webp + jpg do mesmo recorte, tamanho pra tela de alta densidade): retrato do fundador da sessão de dez/2025 em 4:5 (960×1200) e 1:1 (800×800, substitui o de 512), Yago Martins em 1:1, os dois sócios no escritório (3:2) e palco e sala da Viver de IA Experience (16:9).
@@ -46,8 +51,7 @@ Padrão: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) · Versiona
 ### Exemplos com a oferta e os números de hoje (30/out)
 
 - 97 páginas de exemplo trocam a oferta antiga (turma de 4 meses, 18 aulas, vagas, 1:1 como produto, preços antigos) pela atual da ficha de fatos (planos Starter/Pro/Enterprise com preço real, soluções prontas, formações, mentoria em grupo, imersão, garantia de 90 dias da cláusula 7) e os números da empresa pelos da ficha (521 cases, 157 soluções, 29 setores).
-- Casos com nome e número sem fonte (11.920 "da Nina", Nome Sobrenome, Paula Mendes, Renato Lima…) viram casos reais publicados em viverdeia.ai/cases (só o resultado do título: Viva Nexo, Trivia Studio, Place Dreams, Pasetti, Assessoria MAP — R$ 2.000/mês, conferido na página do case) ou depoimento marcado como exemplo. Leaders AI: data, local e palestrantes viram placeholder. Mockups de produto mantêm personas fictícias, sem a oferta antiga.
-- Achado: o 11.920 é da Exemplo ("11.920 conversas analisadas com IA", + R$ 5 mil em vendas influenciadas) — nunca foi volume mensal da Nina.
+- Casos com nome e número sem fonte viraram casos reais publicados em viverdeia.ai/cases (só o resultado do título: Viva Nexo, Trivia Studio, Place Dreams, Pasetti, Assessoria MAP — R$ 2.000/mês, conferido na página do case) ou depoimento marcado como exemplo. Leaders AI: data, local e palestrantes viram placeholder. Mockups de produto mantêm personas fictícias, sem a oferta antiga.
 
 ### Design · rodada 4 — chrome do site (30/out)
 
@@ -174,7 +178,7 @@ Padrão: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) · Versiona
 - Guarda `lint:glass` (`scripts/glass-order.mjs`) no CI.
 - `lint:sync` passa a guardar as cópias do prompt das IAs (`public/viver-de-ia-system-prompt.md`, `public/llms.txt`).
 - Teste dos tokens gerados (`src/lib/tokens.test.ts`).
-- `CLAUDE.md` (mapa e regras pra quem trabalha no repo), `docs/estado-e-roadmap.md`, `playwright.cloud.config.ts` (Playwright com o Chromium da máquina, pra sessão em nuvem).
+- `CLAUDE.md` (mapa e regras pra quem trabalha no repo), `playwright.cloud.config.ts` (Playwright com o Chromium da máquina, pra sessão em nuvem).
 
 ### Removido
 
@@ -364,7 +368,7 @@ Passe world-class: auditoria multi-agente (120 agentes · 157 folhas de estilo �
 - Mesh navy + noise texture + glow navy como assinatura visual
 - Tipografia Geist + Geist Mono (migração de Fraunces+Inter)
 - 7 não-negociáveis editoriais cristalizados (light-first, glass intencional, gold singular, pills canônicas, coral só destrutivo, sparkles banido, voz operador)
-- Skill `/viver-de-ia-design` em `~/.claude/skills/`
+- Skill `/viver-de-ia-design` instalada localmente na máquina de quem mantém o plugin
 
 ---
 

@@ -34,7 +34,7 @@ export default function Upload() {
           <li>
             <span className="ico"><FileText size={16} strokeWidth={1.75} /></span>
             <div className="meta">
-              <span className="name">depoimento-Nome Sobrenome.png</span>
+              <span className="name">depoimento-cliente.png</span>
               <span className="size">1.1 MB · 64% enviado</span>
               <div className="bar"><span style={{ width: '64%' }} /></div>
             </div>

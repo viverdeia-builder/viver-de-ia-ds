@@ -7,7 +7,7 @@ Site de referência + library React do design system da Viver de IA. Marca edito
 - **Visual regression suite** com 109 rotas × 2 viewports (218 testes Playwright) + a11y (axe) nas mesmas rotas.
 - **TypeScript estrito** + dark mode + code-splitting por rota.
 
-Pra trabalhar no repo: [`CLAUDE.md`](CLAUDE.md) (mapa, cadeia de derivação, regras) · estado e roadmap em [`docs/estado-e-roadmap.md`](docs/estado-e-roadmap.md).
+Pra trabalhar no repo: [`CLAUDE.md`](CLAUDE.md) (mapa, cadeia de derivação, regras).
 
 ---
 
@@ -151,7 +151,7 @@ bun run test:visual:report   # abre diff lado-a-lado pra debug
 ## Histórico
 
 - Inicializado em maio/2026 como fundação compartilhada pra todos os produtos Viver de IA.
-- Cristalizado na skill `/viver-de-ia-design` (`~/.claude/skills/viver-de-ia-design/`).
+- Cristalizado na skill `/viver-de-ia-design` (hoje distribuída pelo plugin `viver-de-ia`).
 
 ---
 

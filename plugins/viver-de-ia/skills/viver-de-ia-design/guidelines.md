@@ -143,7 +143,7 @@ Checklist obrigatório antes de marcar tela como pronta.
 
 ## 4. Components & patterns canônicos (65+ páginas vivas)
 
-Reference: `~/viver-de-ia-ds` (`bun dev` → :5173)
+Reference: o repositório do design system (`bun dev` → :5173)
 
 **Componentes editoriais world-class:**
 - Charts (area + bar + donut + funnel) — SVG autoral navy

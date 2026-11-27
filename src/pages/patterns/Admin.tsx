@@ -58,7 +58,7 @@ function WebhooksSection() {
               </div>
               <div>
                 <p className="vds-wh-url mono">
-                  https://api.exemplo.com.br/<strong>via/webhook</strong>
+                  https://api.suaempresa.com.br/<strong>via/webhook</strong>
                 </p>
                 <p className="vds-wh-meta">
                   <span>3 eventos · <em>operator.created · operator.updated · subscription.renewed</em></span>

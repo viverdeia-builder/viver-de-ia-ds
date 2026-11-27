@@ -6,7 +6,6 @@ Dono: Rafael Milagre. Idioma do projeto: PT-BR (código, commits, docs).
 
 - Site: https://viver-de-ia-ds.vercel.app (Vercel ligada ao repo desde 28/out: **push no `main` publica sozinho**; outros branches viram preview)
 - Regras de marca (fonte canônica): `plugins/viver-de-ia/skills/viver-de-ia-design/SKILL.md`
-- Estado atual, achados e roadmap: `docs/estado-e-roadmap.md`
 
 ## Comandos
 
@@ -58,8 +57,8 @@ scripts/                   build/guard scripts · fix-*.mjs e migrate-glass.mjs 
 | componente da lib | página `/components/*` ou `/api/*` + teste ao lado (`*.test.tsx`) |
 | qualquer coisa notável | `CHANGELOG.md` em `[Não lançado]` |
 
-A skill local do Rafael (`~/.claude/skills/viver-de-ia-design/`) vive fora do repo e deriva calada — avisar quando a do plugin mudar.
-No Mac dele, depois de push com bump do plugin: `claude plugin marketplace update viver-de-ia-ds && claude plugin update viver-de-ia@viver-de-ia-ds`,
+Se a máquina de quem mantém o plugin tiver uma cópia local da skill fora do repo, ela deriva calada — avisar quando a do plugin mudar.
+Nessa máquina, depois de push com bump do plugin: `claude plugin marketplace update viver-de-ia-ds && claude plugin update viver-de-ia@viver-de-ia-ds`,
 e copiar `SKILL.md`, `guidelines.md` e as 3 folhas CSS do plugin pra skill local (o resto da pasta local é só dela).
 
 ## Regras que mais quebram (detalhe na SKILL.md)
